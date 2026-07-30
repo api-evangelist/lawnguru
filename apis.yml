@@ -1,7 +1,25 @@
 aid: lawnguru
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lawnguru.png
 name: LawnGuru
-description: LawnGuru is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: LawnGuru is a lawn and landscape services marketplace that connects homeowners
+  with vetted local service providers through a mobile-first platform. It offers instant
+  pricing via aerial property mapping, real-time job tracking, and a satisfaction guarantee,
+  spanning 17+ outdoor services including lawn mowing, snow clearing, yard cleanup, weeding,
+  hedge trimming, gutter cleaning, tree work, seeding, aeration, mulch installation, pressure
+  washing, sprinkler services, and junk removal. The company reports over 1,000,000 completed
+  jobs. As of this enrichment pass, LawnGuru publishes no public developer API, developer
+  portal, or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/lawnguru/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Lawn Care
+- Home Services
+- Marketplace
+- On-Demand
+- Landscaping
+- Local Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lawnguru-domain-security.yml
 - type: Website
   url: https://lawnguru.co
+- type: Blog
+  url: https://blog.lawnguru.co/
+- type: HelpCenter
+  url: https://customersupport.lawnguru.co/
+- type: Support
+  url: https://lawnguru.co/contact-us/
+- type: PrivacyPolicy
+  url: https://lawnguru.co/privacy/
+- type: TermsOfService
+  url: https://lawnguru.co/terms/
+- type: SignUp
+  url: https://lawnguru.co/services/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
